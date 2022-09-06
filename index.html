@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/lecatsworld/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gatiños</title>
+  <script type="module" crossorigin src="/lecatsworld/assets/index.421c5686.js"></script>
+  <link rel="stylesheet" href="/lecatsworld/assets/index.f780f12b.css">
+</head>
+
+<body class="font-mono">
+  <main class=" flex flex-col text-center w-full overflow-hidden " id="main">
+    
+    <h1 class=" py-12  text-4xl">Le cat's world</h1>
+    <span id="errorPeticion"></span>
+    <div id="randomCatsContainer" class="">
+      <!-- //ramdom cats -->
+      <section class="w-1/5">
+        <form id="uploadingForm">
+          <label class="bg-gray-200">🌍💌Envia tu gatito al mundo💌🌍</label>
+          <input type="file" value="Buscar" name="file" id="file" accept="image/png, image/jpeg">
+          <button type="button" id="upBtn" class=" mt-1 py-1 px-2 border border-black shadow-md rounded-md hover:shadow-sm">Up the Cat</button>
+        </form>
+      </section>
+      <div class="flex w-full justify-center pt-12 pb-6 overflow-hidden">
+
+        <section class="w-4/5 ">
+
+          <button id="newCat"
+            class=" text-red-700 bg-slate-900 py-2 px-4 shadow-red-900  shadow-xl rounded-md hover:shadow-red-600 hover:text-red-500 ">Generador
+            de Gatos</button>
+        </section>
+
+       
+
+      </div>
+
+      <section id="randomCats"
+        class="w-auto  h-96 items-center justify-center  py-12  bg-slate-900 space-x-8  flex ">
+
+
+
+      </section>
+
+    </div>
+    <section class="flex flex-col w-auto bg-red-600">
+      <h2 class="mt-8 py-5 text-3xl text-black">Le favourites cats</h2>
+
+      <section id="favouritesCats"
+        class="w-screen   flex mt-6  items-center overflow-x-scroll overscroll-x-none flex-wrap  gap-6 h-96 justify-center ">
+
+      </section>
+
+    </section>
+    <section id="laverga" class="flex items-center flex-grow-0">
+   
+    </section>
+  </main>
+  
+</body>
+
+</html>
