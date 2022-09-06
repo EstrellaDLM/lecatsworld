@@ -1,15 +1,10 @@
+import {api_key} from '.././../api.js'
 const urlRandomCats = "https://api.thecatapi.com/v1/images/search?limit=3"
 const urlUploadCats = "https://api.thecatapi.com/v1/images/upload"
 const urlFavouriteCats = "https://api.thecatapi.com/v1/favourites"
-const api_key = "live_qcN6ZweDdCLloKKYvGxW2uwIOoPsNI6pe4cmVaweRF2cGdm2Wbwwzh3sXSZNY2mX"
 
-const cats1 = document.getElementById("cats1")
-const cats2 = document.getElementById("cats2")
-const cats3 = document.getElementById("cats3")
 
-const cats4 = document.getElementById("cats4")
-const cats5 = document.getElementById("cats5")
-const cats6 = document.getElementById("cats6")
+
 
 const errorPeticion = document.getElementById("errorPeticion")
 
@@ -35,7 +30,7 @@ export async function getRandomCats() {
 
     //   </section>
 
-        card.className = "relative min-w-72"
+        card.className = "relative min-w-72 rounded-md overflow-hidden"
         cardImg.className = "w-72  h-72"
         cardImg.setAttribute("id", aCat.id)
         cardImg.setAttribute("src", aCat.url)
@@ -92,7 +87,7 @@ export async function getFavouritesCats() {
             const cardImg = document.createElement("img")
             const cardBtn = document.createElement("button")
 
-            card.className = " h-64 min-w-80 relative"
+            card.className = " h-64 min-w-80 relative rounded-md overflow-hidden"
             cardImg.className = "w-80  h-full"
             cardImg.setAttribute("id", aCat.id)
             cardImg.setAttribute("src", aCat.image.url)
