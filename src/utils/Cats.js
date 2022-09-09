@@ -100,7 +100,7 @@ export async function getFavouritesCats() {
                 deleteFavouritesCats(aCat.id)
             })
 
-            favouritesCats.appendChild(card)
+            favouritesCats.append(card)
 
 
             // console.log(card)
